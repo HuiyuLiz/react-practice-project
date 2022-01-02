@@ -8,7 +8,7 @@ const UsersList = ({ users, onDeleteUser }) => {
   return (
     <ul className="list-group mb-5">
       {users.length > 0 && users.map(user => (
-        <li className="list-group-item d-flex justify-content-between align-items-stretch" key={user.name}>
+        <li className="list-group-item d-flex justify-content-between align-items-stretch" key={user.Id}>
           <div>
             <div className="h5">
               {user.name}
