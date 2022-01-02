@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Card = ({ type, className, children, onClick }) => {
+const Button = ({ type, className, children, onClick }) => {
   return (
     <button type={type || 'button'} className={`btn ${className || 'btn-primary'}`} onClick={onClick}>
       {children}
@@ -9,7 +9,7 @@ const Card = ({ type, className, children, onClick }) => {
   )
 }
 
-Card.propTypes = {
+Button.propTypes = {
   type: PropTypes.string,
   className: PropTypes.string,
   children: PropTypes.oneOfType([
@@ -18,4 +18,4 @@ Card.propTypes = {
   ]),
   onClick: PropTypes.func
 }
-export default Card
+export default Button
