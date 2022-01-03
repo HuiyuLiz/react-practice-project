@@ -37,12 +37,12 @@ function App () {
         <div className="h3 text-center mb-5"> React Practice Project</div>
       </div>
       <div className="row">
-        <div className="col-md-8 offset-2">
-          <Card>
+        <div className="col-md-8 mx-auto">
+          <Card className="mt-3">
             <AddUserForm onAddUser={addUserHandler}></AddUserForm>
           </Card>
         </div>
-        <div className="col-md-8 offset-2 my-5">
+        <div className="col-md-8 mx-auto my-5">
           <div className="mb-3">Users:</div>
           <UsersList users={users} onDeleteUser={deleteUserHandler}></UsersList>
         </div>

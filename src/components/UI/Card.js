@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const Card = ({ className, children }) => {
   return (
-    <div className={`card ${className}`}>
+    <div className={`card ${className || ''}`}>
         <div className="card-body">
         {children}
         </div>
