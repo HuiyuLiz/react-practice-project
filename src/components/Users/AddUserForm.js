@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import Button from '../UI/Button'
-import Modal from '../../components/UI/Modal'
+import ErrorModal from '../../components/UI/ErrorModal'
 
 const AddUserForm = ({ onAddUser }) => {
   const [userName, setUserName] = useState('')
@@ -57,7 +57,7 @@ const AddUserForm = ({ onAddUser }) => {
 
   return (
     <>
-      {error && <Modal title={error.title} content={error.content} onModalHandler={closeModal}></Modal>}
+      {error && <ErrorModal title={error.title} content={error.content} onModalHandler={closeModal}></ErrorModal>}
       <form>
         <div className="mb-3">
           <label htmlFor="UserName" className="form-label">User Name</label>
